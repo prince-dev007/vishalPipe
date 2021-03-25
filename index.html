@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Vishal Pipes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container-fluid mt-5" id="section1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    </div>
+                <div class="col-lg-6 mt-5 p-lg-5">
+
+                    <img src='./Vishal-Logo.jpg'  height="80px">
+                    <form class="mt-4" id="loginForm">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" required class="form-control" name="email" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" required class="form-control" name="password" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn">Login Here</button>
+                        <button type="submit" class="btn">Forgot Password</button>
+                    </form>
+                    <h6 class="mt-5">Copyright All Rights Reserved &copy; 2021</h6>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#loginForm').off().submit(e =>{
+            e.preventDefault();
+            loginForm();
+        });
+    });
+
+    async function loginForm()
+    {
+        const array = $('#loginForm').serializeArray();
+        let data = {};
+        for (key of array) {
+            data[key.name] = key.value;
+        }
+        if(data.email === 'admin@gmail.com' && data.password ==='admin') {
+            alert('Password Matched');
+            window.location.href = 'Dashboard.html';
+        }
+        else
+        alert('Incorrect Credentials');
+    }
+
+
+    </script>
+</html>
