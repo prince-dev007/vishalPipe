@@ -53,10 +53,7 @@ body
 {
     display:none;
 }
-#section2 .row .col-lg-6:hover
-{
-    transform: translateX(10px);
-}
+
 #section2 .content:hover
 {
 
@@ -70,7 +67,7 @@ body
     }  
     #section2 h1
     {
-        font-size:1.4rem;
+        font-size:1.2rem;
         font-weight:bold;
     }
     #section2 h2
