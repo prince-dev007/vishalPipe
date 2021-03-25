@@ -33,11 +33,29 @@ body
 {
     color: #000;
     text-decoration:none;
-
+    
 }
 #section2 .row a:hover
 {
     text-decoration:none;
+    
+
+}
+#section2 .row .col-lg-6
+{
+    transition:0.78s;
+}
+#section2 .row .col-lg-6 .spinner-border
+{
+    display:none;
+}
+#orderSpinner
+{
+    display:none;
+}
+#section2 .row .col-lg-6:hover
+{
+    transform: translateX(10px);
 }
 #section2 .content:hover
 {

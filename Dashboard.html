@@ -50,13 +50,18 @@
                 quality, corroborated by National & International Standards.</p>
             <div class="row mt-3">
                 <div class="col-lg-6 col-6">
-                    <a href="Neworder.html"><div class="content rounded shadow d-flex align-items-center justify-content-center">
+                    <a href="Neworder.html" id="newOrder"><div class="content rounded shadow d-flex align-items-center justify-content-center">
                         <h1>New Order</h1>
+                        <div class="spinner-border text-danger ml-1" id="orderSpinner" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
                     </div></a>
                 </div>
                 <div class="col-lg-6 col-6">
                     <div class="content rounded shadow d-flex align-items-center justify-content-center">
-                        <h1>Order History</h1>
+                        <h1>Order History</h1> <div class="spinner-border text-danger ml-1" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -64,11 +69,17 @@
                 <div class="col-lg-6 col-6">
                     <div class="content rounded shadow d-flex align-items-center justify-content-center">
                         <h1>Outstanding</h1>
+                        <div class="spinner-border text-danger ml-1" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-6">
                     <div class="content rounded shadow d-flex align-items-center justify-content-center">
                         <h1>Complaint</h1>
+                        <div class="spinner-border text-danger ml-1" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -82,6 +93,9 @@
         var check = confirm("Are you sure you want to logout ?");
         if (check)
             window.location.href = "index.html";
+    });
+    $('#newOrder').click(function () {
+        $('#orderSpinner').show();
     });
 </script>
 </html>
