@@ -1,0 +1,41 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+#section1
+{
+    background-image: url('../assests/img/pipe.png');
+    background-size: cover;
+    height:100vh;
+}
+#section1 .form-control
+{
+    box-shadow: none;
+    border: none;
+    border: 1.5px solid #dc3545;
+}
+#section1 label
+{
+    font-weight: bold;
+}
+#section1 .btn
+{
+    background: #dc3545;
+    box-shadow: none;
+    color: #fff;
+    border-radius: 0;
+}
+#section1 h6
+{
+    font-size: 0.78rem;
+    font-weight:bold;
+}
+@media only screen and (max-width: 768px) {
+    #section1
+    {
+        background: transparent;
+    }
+}

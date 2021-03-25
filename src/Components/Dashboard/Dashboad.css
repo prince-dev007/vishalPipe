@@ -1,0 +1,78 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+.navbar
+{
+    background:#fff;
+    border-bottom: 0px solid #dc3545;
+}
+#section2 .content
+{
+    background-image: url('../assests/img/order.png');
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    height:200px;
+    transition: 0.34s;
+}
+#section2 span
+{
+    font-weight: bold;
+    color: #dc3545;
+    border-bottom: 2px solid #dc3545
+}
+#section2 .row a 
+{
+    color: #000;
+    text-decoration:none;
+    
+}
+#section2 .row a:hover
+{
+    text-decoration:none;
+    
+
+}
+#section2 .row .col-lg-6
+{
+    transition:0.78s;
+}
+#section2 .row .col-lg-6 .spinner-border
+{
+    display:none;
+}
+#orderSpinner
+{
+    display:none;
+}
+
+#section2 .content:hover
+{
+
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    #section2 .content
+    {
+        margin: 10px auto;
+    }  
+    #section2 h1
+    {
+        font-size:1.2rem;
+        font-weight:bold;
+    }
+    #section2 h2
+    {
+        font-size:1.4rem;
+    }
+    #section2 .content
+    {
+        height:150px;
+    }
+}

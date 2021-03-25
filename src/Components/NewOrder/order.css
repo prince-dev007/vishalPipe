@@ -1,0 +1,36 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+#order1 span
+{
+    color: #dc3545;
+    font-weight: bold;
+    border-bottom: 2px solid #dc3545;
+}
+#order1 .btn
+{
+    background: #dc3545;
+    box-shadow: none;
+    color: #fff;
+    border-radius: 0;
+    font-weight: bold;
+}
+#order1  .card .card-title
+{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    #order1 .card
+    {
+        margin:10px auto;
+    }
+    #order1 h1
+    {
+        font-size:1.8rem;
+    }
+}
