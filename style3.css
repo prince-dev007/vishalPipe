@@ -17,6 +17,11 @@
     box-shadow: none;
     color: #fff;
     border-radius: 0;
+    font-weight: bold;
+}
+#order1  .card .card-title
+{
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
